@@ -5,7 +5,7 @@ driver = None
 @pytest.fixture(scope='class')
 def setup(request):
     global driver
-    driver = webdriver.Firefox(executable_path ="C:\\Users\LENOVO\\geckodriver.exe")
+    driver = webdriver.Firefox(executable_path ="C:\\Users\\LENOVO\\geckodriver.exe")
     driver.get('https://rahulshettyacademy.com/angularpractice/')
     request.cls.driver = driver
     yield driver
